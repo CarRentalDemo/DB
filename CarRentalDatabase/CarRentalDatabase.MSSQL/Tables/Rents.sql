@@ -13,9 +13,10 @@
     [InsuranceNumber] NVARCHAR (50)  NOT NULL,
     CONSTRAINT [PK_Rents] PRIMARY KEY CLUSTERED ([Id] ASC),
     CONSTRAINT [FK_Rents_Bookings] FOREIGN KEY ([BookingId]) REFERENCES [dbo].[Bookings] ([Id]),
-    CONSTRAINT [FK_Rents_Cars] FOREIGN KEY ([CarId]) REFERENCES [dbo].[Cars] ([Id]),
     CONSTRAINT [FK_Rents_Clients] FOREIGN KEY ([ClientId]) REFERENCES [dbo].[Clients] ([Id])
 );
+
+
 
 
 
