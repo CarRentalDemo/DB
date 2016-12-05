@@ -1,6 +1,5 @@
 ﻿CREATE TABLE [dbo].[Rents] (
     [Id]              INT            IDENTITY (1, 1) NOT NULL,
-    [CarId]           INT            NOT NULL,
     [ClientId]        INT            NOT NULL,
     [BookingId]       INT            NOT NULL,
     [DateFrom]        SMALLDATETIME  NOT NULL,
