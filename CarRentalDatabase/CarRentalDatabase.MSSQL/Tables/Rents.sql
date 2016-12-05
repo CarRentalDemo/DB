@@ -2,7 +2,7 @@
     [Id]              INT            IDENTITY (1, 1) NOT NULL,
     [ClientId]        INT            NOT NULL,
     [BookingId]       INT            NOT NULL,
-    [CarTypeId]       INT            NULL,
+    [CarTypeId]       INT            NOT NULL,
     [DateFrom]        SMALLDATETIME  NOT NULL,
     [DateTo]          SMALLDATETIME  NULL,
     [InitialMileage]  DECIMAL (9, 2) NOT NULL,
@@ -16,6 +16,8 @@
     CONSTRAINT [FK_Rents_CarTypes] FOREIGN KEY ([CarTypeId]) REFERENCES [dbo].[CarTypes] ([Id]),
     CONSTRAINT [FK_Rents_Clients] FOREIGN KEY ([ClientId]) REFERENCES [dbo].[Clients] ([Id])
 );
+
+
 
 
 
