@@ -63,12 +63,16 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Tables" />
+    <Folder Include="Data" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\Cars.sql" />
     <Build Include="Tables\Rents.sql" />
     <Build Include="Tables\Clients.sql" />
     <Build Include="Tables\CarTypes.sql" />
     <Build Include="Tables\Bookings.sql" />
+    <Build Include="Tables\Settings.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Data\InitializeSettings.sql" />
   </ItemGroup>
 </Project>
